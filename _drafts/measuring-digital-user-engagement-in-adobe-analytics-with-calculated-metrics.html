@@ -1,0 +1,106 @@
+---
+layout: post
+title: Measuring digital user engagement in Adobe Analytics with calculated metrics
+date:
+type: post
+parent_id: '0'
+published: false
+password: ''
+status: draft
+categories: []
+tags: []
+meta:
+  _edit_last: '1'
+  _yoast_wpseo_content_score: '30'
+  _yoast_wpseo_primary_category: '1'
+author:
+  login: admin
+  email: keith@keithyap.com.au
+  display_name: Keith
+  first_name: ''
+  last_name: ''
+permalink: "/"
+---
+<p><!-- wp:paragraph --></p>
+<p>'Quality over quantity', or so the saying goes. You may have lots of visitors to your app or website, but if none of them do anything, then what's the point?</p>
+<p><!-- /wp:paragraph --></p>
+<p><!-- wp:paragraph --></p>
+<p>There are many ways of measuring the quality of visits to a website. Great metrics such as visit depth (how many pages did they visit), visit number (are they a new or repeat visitor) and time (how long did they spend) help give us a general idea. Then we have explicit conversion variables  (eVars)  or success events. These are set to trigger if a visitor accomplishes something meaningful, like purchasing a product or signing up for a newsletter.</p>
+<p><!-- /wp:paragraph --></p>
+<p><!-- wp:paragraph --></p>
+<p>Each of these metrics in isolation can tell us a bit about a particular visit. When viewed in combination, they can tell us even more. What would be powerful, however, would be to combine aspects of all of these metrics into one, single metric. Ideally this one metric would allow us to distinguish whether one visit is more valuable than another. We can call this the <strong>user engagement score</strong>.</p>
+<p><!-- /wp:paragraph --></p>
+<p><!-- wp:paragraph --></p>
+<p>Drawing inspiration from:</p>
+<p><!-- /wp:paragraph --></p>
+<p><!-- wp:list --></p>
+<ul>
+<li>this talk on a basic digital user engagement metric using the Fibonacci sequence from Adobe Summit 2018</li>
+<li>Adam Greco's post on capturing the quality of visit depth</li>
+</ul>
+<p><!-- /wp:list --></p>
+<p><!-- wp:heading --></p>
+<h2>Creating the user engagement score</h2>
+<p><!-- /wp:heading --></p>
+<p><!-- wp:paragraph --></p>
+<p>This first iteration of the user engagement score is built as follows:</p>
+<p><!-- /wp:paragraph --></p>
+<p><!-- wp:list --></p>
+<ul>
+<li>+ for every page view or action</li>
+<li>+ higher values assigned depending on the type of page or action</li>
+<li>+ higher values assigned for visit depth</li>
+<li>+ higher values assigned for repeat visits</li>
+</ul>
+<p><!-- /wp:list --></p>
+<p><!-- wp:paragraph --></p>
+<p>Here's how you could go about creating a digital user engagement score for your website:</p>
+<p><!-- /wp:paragraph --></p>
+<p><!-- wp:paragraph --></p>
+<p>1.Plan out a user engagement map of all pages and interactions of note on your site, in rough order of increasing value. Consult your existing analytics implementation (if you have one) for inspiration. This doesn't have to be perfect as you can always edit it later.</p>
+<p><!-- /wp:paragraph --></p>
+<p><!-- wp:paragraph --></p>
+<p>2. Assign a value to each page view or interaction. In a perfect world this value would be the potential dollar value, however working that out accurately is easier said than done. If you don't have that handy, use the Fibonnaci sequence to distinguish between tiers.</p>
+<p><!-- /wp:paragraph --></p>
+<p><!-- wp:paragraph --></p>
+<p>3. Replicate your user engagement map in Adobe Analytics as a calculated metric. Start off with 2 levels of containers, and then simply add each view or action and multiply it by its corresponding value. Repeat till the entire map is complete, then divide the entire thing by visits. By the end of it, you're going to wish Adobe allowed for text entry of a calculated metric instead of having to use the UI.</p>
+<p><!-- /wp:paragraph --></p>
+<p><!-- wp:paragraph --></p>
+<p>4. Take your engagement metric for a spin. Analyse it against a few pages from your website and do a sense check. If the numbers look off, check that you haven't made a mistake in step 3.</p>
+<p><!-- /wp:paragraph --></p>
+<p><!-- wp:paragraph --></p>
+<p>5. Refine your map and calculated metric as needed.</p>
+<p><!-- /wp:paragraph --></p>
+<p><!-- wp:paragraph --></p>
+<p>Once you're happy with the first draft of your metric, consider creating a participation version of it. Just duplicate the metric you have, and change the calculation for each part of the metric to participation.</p>
+<p><!-- /wp:paragraph --></p>
+<p><!-- wp:paragraph --></p>
+<p>&lt;ss></p>
+<p><!-- /wp:paragraph --></p>
+<p><!-- wp:heading --></p>
+<h2>Use cases for the user engagement score</h2>
+<p><!-- /wp:heading --></p>
+<p><!-- wp:paragraph --></p>
+<p>Now for the fun part - using your newly created metric! I've listed a few use cases below that I've seen and used myself. No doubt there are many more ways to use it so if you find a good one please share.</p>
+<p><!-- /wp:paragraph --></p>
+<p><!-- wp:paragraph --></p>
+<p>1.Determining which channel provides the higher quality vists</p>
+<p><!-- /wp:paragraph --></p>
+<p><!-- wp:paragraph --></p>
+<p><!-- /wp:paragraph --></p>
+<p><!-- wp:paragraph --></p>
+<p>2. Tracking the health of your website or app overtime</p>
+<p><!-- /wp:paragraph --></p>
+<p><!-- wp:paragraph --></p>
+<p><!-- /wp:paragraph --></p>
+<p><!-- wp:paragraph --></p>
+<p>3. Finding hidden gems of pages</p>
+<p><!-- /wp:paragraph --></p>
+<p><!-- wp:paragraph --></p>
+<p>There are likely pages on your website that don't receive much attention, yet are a crucial part of a highly engaged visit. Now you can unearth them and give them the attention they deserve.</p>
+<p><!-- /wp:paragraph --></p>
+<p><!-- wp:paragraph --></p>
+<p>4. Discovering your most engaged segments</p>
+<p><!-- /wp:paragraph --></p>
+<p><!-- wp:paragraph --></p>
+<p><!-- /wp:paragraph --></p>
