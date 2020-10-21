@@ -55,8 +55,8 @@ Optional: It may then be helpful to create a simple bar chart to visually see th
 
 
 <img src="{{ site.baseurl }}/assets/images/2016/11/1-90ST0nvyXRmiSjMXSvzYxw.png" alt="Word count results displayed in a bar chat is a quick way to derive insights from a body of text"> <i>Word count results displayed in a bar chart is a quick way to derive insights from a body of text</i>
-<br>
-<br>
+
+&nbsp;
 #### Word clouds in&nbsp;Excel
 
 A word cloud is basically a fancy way to display a word count. In terms of actual usefulness for text analysis, a word count and associated bar chart is far more insightful. However, word clouds do look pretty. If you are set on creating a word cloud, consultant Robert Mundigl has created a [handy excel template and accompanying article](http://www.clearlyandsimply.com/clearly_and_simply/2015/02/word-clouds-with-microsoft-excel.html) on how to do so.
@@ -64,7 +64,7 @@ A word cloud is basically a fancy way to display a word count. In terms of actua
 ![Example word cloud from excel]({{ site.baseurl }}/assets/images/2016/11/1-nfoVPlQK3QjrvkcwjkKRaA.png)
 
 <figure class="graf graf--figure"></figure>
-<br>
+&nbsp;
 #### Sentence counts
 
 This can be a useful precursor to the sentiment analysis and topic modelling methods below. If your body of text is broken down sentence by sentence (eg. a body of survey responses) it may be useful to eliminate the responses that have too few words to be useful in analysis. The formula below returns the number of words in a cell (A1).
@@ -77,8 +77,8 @@ You can then filter out all sentences below a certain word count.
 
 <img src="{{ site.baseurl }}/assets/images/2016/11/1-BcFTg9H4d-5ub5liXONe6g.png" alt="Screenshot of Filtering out any feedback less than 3 words in length as they do not add to our analysis and only create noise">
 <i>Filtering out any feedback less than 3 words in length as they do not add to our analysis and only creates noise</i>
-<br>
-<br>
+
+&nbsp;
 #### Sentiment Analysis
 
 When we read a sentence, we can usually infer from the subjective information supplied what the sentiment, or mood, of that sentence is.
@@ -117,8 +117,8 @@ You are then free to categorise feedback by sentiment category.
 This method is by no means perfect; constructive feedback may be left even after a customer has given a low rating, and likewise a complaint may be made by the same customer who has given a high rating. However, from my experience it returns accurate results more than 80% of the time, _as long as the quantitative rating question is asked right before the open text feedback question._
 
 True sentiment analysis derived purely from the text itself is unfortunately outside the capabilities of excel, to my knowledge. If your text is fairly linear, it may be possible to build up a library of sentiment triggering words and feed that into a large decision making macro to come up with a sentiment. Otherwise, the only alternative will be to use proper text analysis solutions.
-<br>
-<br>
+
+&nbsp;
 #### Theme / Topic modelling in&nbsp;excel
 
 When we read a sentence, we can usually infer from the subjective information and context supplied what the overall themes or topics are.
@@ -152,7 +152,8 @@ However, if you know your body of text well enough, and it is sufficiently narro
 ```
 
 <img src="{{ site.baseurl }}/assets/images/2016/11/1-TrgE3o3x3Fddx4CbsIgxbA.png" alt="Screenshot of the formula at work"><i> The formula at work matching the feedback to our pre-defined topic. Note the anchors ($) in the formula, this is necessary to copy the formula across and down.</i>
-<br>
+
+&nbsp;
 In the example above, for cell E2:
 
 ```
@@ -169,8 +170,8 @@ In the example above, for cell E2:
 
 
 <img src="{{ site.baseurl }}/assets/images/2016/11/1-D-IWjeVFalKS_Jllbsz-jw.png" alt="Example feedback for mobile app in excel"> <i>Our feedback can now be read at a glance</i>
-<br>
-<br>
+
+&nbsp;
 #### Extra: Dynamic Topic Modelling without Defined Names
 
 Editing topics with this setup can be cumbersome at times, as the name ranges we have set for our topics above have to be manually reset every time we add or subtract a topic from a topic set. By using the OFFSET function we can set up topic to dynamically resize depending on the number of topics we have, without needing to manage topics using the Name Manager. First, in our 'Topics' sheet we add a 'Topic Word Counts' row which contains a COUNTA formula of each topic column.
