@@ -54,7 +54,7 @@ Simple word count of unique word occurrences can go a long way towards uncoverin
 Optional: It may then be helpful to create a simple bar chart to visually see the occurrences of words relative to each other.
 
 <figure class="graf graf--figure">
-<p><img src="{{ site.baseurl }}/assets/images/2016/11/1-90ST0nvyXRmiSjMXSvzYxw.png" alt="Word count results displayed in a bar chat is a quick way to derive insights from a body of text"> Word count results displayed in a bar chart is a quick way to derive insights from a body of text</p></figure>
+<p><img src="{{ site.baseurl }}/assets/images/2016/11/1-90ST0nvyXRmiSjMXSvzYxw.png" alt="Word count results displayed in a bar chat is a quick way to derive insights from a body of text"> <i>Word count results displayed in a bar chart is a quick way to derive insights from a body of text</i></p></figure>
 #### Word clouds in&nbsp;Excel
 
 A word cloud is basically a fancy way to display a word count. In terms of actual usefulness for text analysis, a word count and associated bar chart is far more insightful. However, word clouds do look pretty. If you are set on creating a word cloud, consultant Robert Mundigl has created a [handy excel template and accompanying article](http://www.clearlyandsimply.com/clearly_and_simply/2015/02/word-clouds-with-microsoft-excel.html) on how to do so.
@@ -75,7 +75,7 @@ You can then filter out all sentences below a certain word count.
 <figure class="graf graf--figure">
 <figcaption class="imageCaption">
 <img src="{{ site.baseurl }}/assets/images/2016/11/1-BcFTg9H4d-5ub5liXONe6g.png" alt="Screenshot of Filtering out any feedback less than 3 words in length as they do not add to our analysis and only create noise">
-<p>Filtering out any feedback less than 3 words in length as they do not add to our analysis and only creates noise</p>
+<p><i>Filtering out any feedback less than 3 words in length as they do not add to our analysis and only creates noise</i></p>
 </figcaption>
 </figure>
 #### Sentiment Analysis
@@ -111,7 +111,7 @@ You are then free to categorise feedback by sentiment category.
 <figure class="graf graf--figure">
 <figcaption class="imageCaption">
 <img src="{{ site.baseurl }}/assets/images/2016/11/1-NqyPW7jAl11XuNYAAs5few.png" alt="Screenshot of Using a pivot table we can filter all detractor comments to see which areas of improvement we should focus on"> 
-<p>Using a pivot table we can filter all detractor comments to see which areas of improvement we should focus on</p>
+<p><i>Using a pivot table we can filter all detractor comments to see which areas of improvement we should focus on</i></p>
 </figcaption>
 </figure>
 
@@ -136,12 +136,12 @@ However, if you know your body of text well enough, and it is sufficiently narro
 1. Organise your feedback with individual responses on separate rows. If you have accompanying feedback scores, make sure these sit on the same row. This will be the **Analysis** sheet.
 2. Set up the topics in a separate sheet. This will be the **Topic Models** sheet. The first row of the sheet should contain the individual topic titles. In each column, under each title, list out the words that correspond to the topic.
 <figure class="graf graf--figure">
-<p><img src="{{ site.baseurl }}/assets/images/2016/11/1-88mobO2wgdE1maMIUOBcVQ.png" alt="List of A simple topic model"> A simple topic model</p></figure>
+<p><img src="{{ site.baseurl }}/assets/images/2016/11/1-88mobO2wgdE1maMIUOBcVQ.png" alt="List of A simple topic model"><i> A simple topic model</i></p></figure>
 
 3. Define each group, setting the title as the name for the group. Each of these will be a **Topic Group.**
 
 <figure class="graf graf--figure">
-<p><img src="{{ site.baseurl }}/assets/images/2016/11/1-ZzPdOaeZ35UHVt_yKx5VuQ.png" alt="Screenshot of Using excel's names feature to make topic groups"> Use excel’s inbuilt Names feature to use as your Topic Groups. You can use either the ‘Define Name’ function (pictured) or the ‘Create from Selection’ function underneath. Both will achieve the same result.</p></figure>
+<p><img src="{{ site.baseurl }}/assets/images/2016/11/1-ZzPdOaeZ35UHVt_yKx5VuQ.png" alt="Screenshot of Using excel's names feature to make topic groups"><i> Use excel’s inbuilt Names feature to use as your Topic Groups. You can use either the ‘Define Name’ function (pictured) or the ‘Create from Selection’ function underneath. Both will achieve the same result.</i></p></figure>
 
 3. Copy and paste the first row containing the topic titles into the Analysis sheet, alongside the feedback.
 
@@ -151,7 +151,7 @@ However, if you know your body of text well enough, and it is sufficiently narro
 =IF(SUMPRODUCT(--ISNUMBER(SEARCH(Topic Group,Feedback)))\>0,Title of Topic Group,""))
 ```
 <figure class="graf graf--figure">
-<p><img src="{{ site.baseurl }}/assets/images/2016/11/1-TrgE3o3x3Fddx4CbsIgxbA.png" alt="Screenshot of the formula at work"> The formula at work matching the feedback to our pre-defined topic. Note the anchors ($) in the formula, this is necessary to copy the formula across and down.</p></figure>
+<p><img src="{{ site.baseurl }}/assets/images/2016/11/1-TrgE3o3x3Fddx4CbsIgxbA.png" alt="Screenshot of the formula at work"><i> The formula at work matching the feedback to our pre-defined topic. Note the anchors ($) in the formula, this is necessary to copy the formula across and down.</i></p></figure>
 
 In the example above, for cell E2:
 
@@ -168,18 +168,18 @@ In the example above, for cell E2:
 &nbsp;
 
 <figure class="graf graf--figure">
-<p><img src="{{ site.baseurl }}/assets/images/2016/11/1-D-IWjeVFalKS_Jllbsz-jw.png" alt="Example feedback for mobile app in excel"> Our feedback can now be read at a glance</p></figure>
+<p><img src="{{ site.baseurl }}/assets/images/2016/11/1-D-IWjeVFalKS_Jllbsz-jw.png" alt="Example feedback for mobile app in excel"> <i>Our feedback can now be read at a glance</i></p></figure>
 #### Extra: Dynamic Topic Modelling without Defined Names
 
 Editing topics with this setup can be cumbersome at times, as the name ranges we have set for our topics above have to be manually reset every time we add or subtract a topic from a topic set. By using the OFFSET function we can set up topic to dynamically resize depending on the number of topics we have, without needing to manage topics using the Name Manager. First, in our 'Topics' sheet we add a 'Topic Word Counts' row which contains a COUNTA formula of each topic column.
 
-<p><img src="{{ site.baseurl }}/assets/images/2016/11/counta-topics-model.png" alt="COUNTA in the Topics sheet of the workbook"><i>
+<img src="{{ site.baseurl }}/assets/images/2016/11/counta-topics-model.png" alt="COUNTA in the Topics sheet of the workbook">
     <br>
-    COUNTA in the Topics sheet of the workbook</i></p>
+    <i>COUNTA in the Topics sheet of the workbook</i>
 
 In the main topic matching sheet, we pull through these topic word counts. Lastly, we modify the matching formula in the main matching sheet.
 
-<p><img src="{{ site.baseurl }}/assets/images/2016/11/Offset-matching.png" alt="updated main sheet with topic word count">The updated Main sheet, with the topic word count pulled in as well as the updated matching formula with OFFSET</p>
+<p><img src="{{ site.baseurl }}/assets/images/2016/11/Offset-matching.png" alt="updated main sheet with topic word count"><i>The updated Main sheet, with the topic word count pulled in as well as the updated matching formula with OFFSET</i></p>
 
 Building it this way means we can modify our topic word lists and the matching formula will automatically adjust for the new matching list. Many thanks to reader Andrew Ward for coming up with this improvement and sharing it.
 
@@ -188,7 +188,7 @@ Building it this way means we can modify our topic word lists and the matching f
 By joining sentiment analysis and topic modelling, we can generate lists of topics important to our happy customers (promoters) or customers at risk of leaving (detractors). The below example uses the previously discussed sentiment grouping to add further insight to the feedback. You can now also use filters to sort and read feedback by topic groups.
 
 <figure class="graf graf--figure">
-<p><img src="{{ site.baseurl }}/assets/images/2016/11/1-y_q83Ds1JeqVJDjz95qH_A.png" alt="Filtering and sorting feedback graph"> Filtering for promoter feedback only, we can see that Quick Balance is the main feature that currently delights our customers.</p></figure>
+<p><img src="{{ site.baseurl }}/assets/images/2016/11/1-y_q83Ds1JeqVJDjz95qH_A.png" alt="Filtering and sorting feedback graph"><i> Filtering for promoter feedback only, we can see that Quick Balance is the main feature that currently delights our customers.</i></p></figure>
 
 If you'd like to explore and play around with the formulas and methods described in this article, the below excel sheet was used to create the examples in this article and should be a good starting point:
 
