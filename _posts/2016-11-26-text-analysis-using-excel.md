@@ -184,8 +184,8 @@ In the main topic matching sheet, we pull through these topic word counts. Lastl
 <img src="{{ site.baseurl }}/assets/images/2016/11/Offset-matching.png" alt="updated main sheet with topic word count"><i>The updated Main sheet, with the topic word count pulled in as well as the updated matching formula with OFFSET</i>
 
 Building it this way means we can modify our topic word lists and the matching formula will automatically adjust for the new matching list. Many thanks to reader Andrew Ward for coming up with this improvement and sharing it.
-<br>
-<br>
+
+&nbsp;
 #### Combining it all&nbsp;together
 
 By joining sentiment analysis and topic modelling, we can generate lists of topics important to our happy customers (promoters) or customers at risk of leaving (detractors). The below example uses the previously discussed sentiment grouping to add further insight to the feedback. You can now also use filters to sort and read feedback by topic groups.
