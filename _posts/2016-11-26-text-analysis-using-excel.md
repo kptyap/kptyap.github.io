@@ -168,7 +168,7 @@ In the example above, for cell E2:
 &nbsp;
 
 <figure class="graf graf--figure">
-<p><img class="size-full wp-image-10" src="{{ site.baseurl }}/assets/images/2016/11/1-D-IWjeVFalKS_Jllbsz-jw.png" alt="Example feedback for mobile app in excel" width="800" height="453"> Our feedback can now be read at a glance</p></figure>
+<p><img src="{{ site.baseurl }}/assets/images/2016/11/1-D-IWjeVFalKS_Jllbsz-jw.png" alt="Example feedback for mobile app in excel"> Our feedback can now be read at a glance</p></figure>
 #### Extra: Dynamic Topic Modelling without Defined Names
 
 Editing topics with this setup can be cumbersome at times, as the name ranges we have set for our topics above have to be manually reset every time we add or subtract a topic from a topic set. By using the OFFSET function we can set up topic to dynamically resize depending on the number of topics we have, without needing to manage topics using the Name Manager. First, in our 'Topics' sheet we add a 'Topic Word Counts' row which contains a COUNTA formula of each topic column.
