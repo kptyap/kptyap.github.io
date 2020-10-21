@@ -173,12 +173,12 @@ In the example above, for cell E2:
 
 Editing topics with this setup can be cumbersome at times, as the name ranges we have set for our topics above have to be manually reset every time we add or subtract a topic from a topic set. By using the OFFSET function we can set up topic to dynamically resize depending on the number of topics we have, without needing to manage topics using the Name Manager. First, in our 'Topics' sheet we add a 'Topic Word Counts' row which contains a COUNTA formula of each topic column.
 
-<p><img src="({{ site.baseurl }}/assets/images/2016/11/counta-topics-model.png" alt="COUNTA in the Topics sheet of the workbook"> 
+<p><img src="{{ site.baseurl }}/assets/images/2016/11/counta-topics-model.png" alt="COUNTA in the Topics sheet of the workbook"> 
     COUNTA in the Topics sheet of the workbook</p>
 
 In the main topic matching sheet, we pull through these topic word counts. Lastly, we modify the matching formula in the main matching sheet.
 
-<p><img src="({{ site.baseurl }}/assets/images/2016/11/Offset-matching.png" alt="updated main sheet with topic word count">The updated Main sheet, with the topic word count pulled in as well as the updated matching formula with OFFSET</p>
+<p><img src="{{ site.baseurl }}/assets/images/2016/11/Offset-matching.png" alt="updated main sheet with topic word count">The updated Main sheet, with the topic word count pulled in as well as the updated matching formula with OFFSET</p>
 
 Building it this way means we can modify our topic word lists and the matching formula will automatically adjust for the new matching list. Many thanks to reader Andrew Ward for coming up with this improvement and sharing it.
 
