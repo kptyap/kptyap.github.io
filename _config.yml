@@ -25,6 +25,7 @@ github_username:  jekyll
 # added these
 show_excerpts: true
 permalink: /:title/
+comments: true
 
 # Build settings
 markdown: kramdown
