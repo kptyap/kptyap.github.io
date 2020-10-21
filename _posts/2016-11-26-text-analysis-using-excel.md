@@ -188,7 +188,7 @@ Building it this way means we can modify our topic word lists and the matching f
 By joining sentiment analysis and topic modelling, we can generate lists of topics important to our happy customers (promoters) or customers at risk of leaving (detractors). The below example uses the previously discussed sentiment grouping to add further insight to the feedback. You can now also use filters to sort and read feedback by topic groups.
 
 
-<p><img src="{{ site.baseurl }}/assets/images/2016/11/1-y_q83Ds1JeqVJDjz95qH_A.png" alt="Filtering and sorting feedback graph"><i> Filtering for promoter feedback only, we can see that Quick Balance is the main feature that currently delights our customers.</i></p>
+<img src="{{ site.baseurl }}/assets/images/2016/11/1-y_q83Ds1JeqVJDjz95qH_A.png" alt="Filtering and sorting feedback graph"><i>Filtering for promoter feedback only, we can see that Quick Balance is the main feature that currently delights our customers.</i>
 
 If you'd like to explore and play around with the formulas and methods described in this article, the below excel sheet was used to create the examples in this article and should be a good starting point:
 
