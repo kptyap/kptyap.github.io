@@ -53,8 +53,8 @@ Simple word count of unique word occurrences can go a long way towards uncoverin
 
 Optional: It may then be helpful to create a simple bar chart to visually see the occurrences of words relative to each other.
 
-<figure class="graf graf--figure">
-<p><img src="{{ site.baseurl }}/assets/images/2016/11/1-90ST0nvyXRmiSjMXSvzYxw.png" alt="Word count results displayed in a bar chat is a quick way to derive insights from a body of text"> <i>Word count results displayed in a bar chart is a quick way to derive insights from a body of text</i></p></figure>
+
+<img src="{{ site.baseurl }}/assets/images/2016/11/1-90ST0nvyXRmiSjMXSvzYxw.png" alt="Word count results displayed in a bar chat is a quick way to derive insights from a body of text"> <i>Word count results displayed in a bar chart is a quick way to derive insights from a body of text</i>
 #### Word clouds in&nbsp;Excel
 
 A word cloud is basically a fancy way to display a word count. In terms of actual usefulness for text analysis, a word count and associated bar chart is far more insightful. However, word clouds do look pretty. If you are set on creating a word cloud, consultant Robert Mundigl has created a [handy excel template and accompanying article](http://www.clearlyandsimply.com/clearly_and_simply/2015/02/word-clouds-with-microsoft-excel.html) on how to do so.
@@ -72,12 +72,9 @@ This can be a useful precursor to the sentiment analysis and topic modelling met
 
 You can then filter out all sentences below a certain word count.
 
-<figure class="graf graf--figure">
-<figcaption class="imageCaption">
 <img src="{{ site.baseurl }}/assets/images/2016/11/1-BcFTg9H4d-5ub5liXONe6g.png" alt="Screenshot of Filtering out any feedback less than 3 words in length as they do not add to our analysis and only create noise">
-<p><i>Filtering out any feedback less than 3 words in length as they do not add to our analysis and only creates noise</i></p>
-</figcaption>
-</figure>
+<i>Filtering out any feedback less than 3 words in length as they do not add to our analysis and only creates noise</i>
+
 #### Sentiment Analysis
 
 When we read a sentence, we can usually infer from the subjective information supplied what the sentiment, or mood, of that sentence is.
@@ -108,12 +105,10 @@ In the example above, a nested IF statement is used to assign the ‘sentiment�
 
 You are then free to categorise feedback by sentiment category.
 
-<figure class="graf graf--figure">
-<figcaption class="imageCaption">
+
 <img src="{{ site.baseurl }}/assets/images/2016/11/1-NqyPW7jAl11XuNYAAs5few.png" alt="Screenshot of Using a pivot table we can filter all detractor comments to see which areas of improvement we should focus on"> 
-<p><i>Using a pivot table we can filter all detractor comments to see which areas of improvement we should focus on</i></p>
-</figcaption>
-</figure>
+<i>Using a pivot table we can filter all detractor comments to see which areas of improvement we should focus on</i>
+
 
 This method is by no means perfect; constructive feedback may be left even after a customer has given a low rating, and likewise a complaint may be made by the same customer who has given a high rating. However, from my experience it returns accurate results more than 80% of the time, _as long as the quantitative rating question is asked right before the open text feedback question._
 
@@ -135,13 +130,13 @@ However, if you know your body of text well enough, and it is sufficiently narro
 
 1. Organise your feedback with individual responses on separate rows. If you have accompanying feedback scores, make sure these sit on the same row. This will be the **Analysis** sheet.
 2. Set up the topics in a separate sheet. This will be the **Topic Models** sheet. The first row of the sheet should contain the individual topic titles. In each column, under each title, list out the words that correspond to the topic.
-<figure class="graf graf--figure">
-<p><img src="{{ site.baseurl }}/assets/images/2016/11/1-88mobO2wgdE1maMIUOBcVQ.png" alt="List of A simple topic model"><i> A simple topic model</i></p></figure>
+
+<img src="{{ site.baseurl }}/assets/images/2016/11/1-88mobO2wgdE1maMIUOBcVQ.png" alt="List of A simple topic model"><i> A simple topic model</i>
 
 3. Define each group, setting the title as the name for the group. Each of these will be a **Topic Group.**
 
-<figure class="graf graf--figure">
-<p><img src="{{ site.baseurl }}/assets/images/2016/11/1-ZzPdOaeZ35UHVt_yKx5VuQ.png" alt="Screenshot of Using excel's names feature to make topic groups"><i> Use excel’s inbuilt Names feature to use as your Topic Groups. You can use either the ‘Define Name’ function (pictured) or the ‘Create from Selection’ function underneath. Both will achieve the same result.</i></p></figure>
+
+<img src="{{ site.baseurl }}/assets/images/2016/11/1-ZzPdOaeZ35UHVt_yKx5VuQ.png" alt="Screenshot of Using excel's names feature to make topic groups"><i> Use excel’s inbuilt Names feature to use as your Topic Groups. You can use either the ‘Define Name’ function (pictured) or the ‘Create from Selection’ function underneath. Both will achieve the same result.</i>
 
 3. Copy and paste the first row containing the topic titles into the Analysis sheet, alongside the feedback.
 
@@ -150,8 +145,8 @@ However, if you know your body of text well enough, and it is sufficiently narro
 ```
 =IF(SUMPRODUCT(--ISNUMBER(SEARCH(Topic Group,Feedback)))\>0,Title of Topic Group,""))
 ```
-<figure class="graf graf--figure">
-<p><img src="{{ site.baseurl }}/assets/images/2016/11/1-TrgE3o3x3Fddx4CbsIgxbA.png" alt="Screenshot of the formula at work"><i> The formula at work matching the feedback to our pre-defined topic. Note the anchors ($) in the formula, this is necessary to copy the formula across and down.</i></p></figure>
+
+<img src="{{ site.baseurl }}/assets/images/2016/11/1-TrgE3o3x3Fddx4CbsIgxbA.png" alt="Screenshot of the formula at work"><i> The formula at work matching the feedback to our pre-defined topic. Note the anchors ($) in the formula, this is necessary to copy the formula across and down.</i>
 
 In the example above, for cell E2:
 
@@ -167,8 +162,8 @@ In the example above, for cell E2:
 
 &nbsp;
 
-<figure class="graf graf--figure">
-<p><img src="{{ site.baseurl }}/assets/images/2016/11/1-D-IWjeVFalKS_Jllbsz-jw.png" alt="Example feedback for mobile app in excel"> <i>Our feedback can now be read at a glance</i></p></figure>
+
+<img src="{{ site.baseurl }}/assets/images/2016/11/1-D-IWjeVFalKS_Jllbsz-jw.png" alt="Example feedback for mobile app in excel"> <i>Our feedback can now be read at a glance</i>
 #### Extra: Dynamic Topic Modelling without Defined Names
 
 Editing topics with this setup can be cumbersome at times, as the name ranges we have set for our topics above have to be manually reset every time we add or subtract a topic from a topic set. By using the OFFSET function we can set up topic to dynamically resize depending on the number of topics we have, without needing to manage topics using the Name Manager. First, in our 'Topics' sheet we add a 'Topic Word Counts' row which contains a COUNTA formula of each topic column.
@@ -179,7 +174,7 @@ Editing topics with this setup can be cumbersome at times, as the name ranges we
 
 In the main topic matching sheet, we pull through these topic word counts. Lastly, we modify the matching formula in the main matching sheet.
 
-<p><img src="{{ site.baseurl }}/assets/images/2016/11/Offset-matching.png" alt="updated main sheet with topic word count"><i>The updated Main sheet, with the topic word count pulled in as well as the updated matching formula with OFFSET</i></p>
+<img src="{{ site.baseurl }}/assets/images/2016/11/Offset-matching.png" alt="updated main sheet with topic word count"><i>The updated Main sheet, with the topic word count pulled in as well as the updated matching formula with OFFSET</i>
 
 Building it this way means we can modify our topic word lists and the matching formula will automatically adjust for the new matching list. Many thanks to reader Andrew Ward for coming up with this improvement and sharing it.
 
