@@ -38,7 +38,7 @@ A dashboard used to mean an array of physical instruments, arranged in front of 
 The requirement for dashboards has evolved over time and they are now commonly used digitally by companies as a part of their internal reporting process.
 
 <figure class="graf graf--figure">
-<p>[caption id="" align="aligncenter" width="800"]<img class="graf-image" src="%7B%7B%20site.baseurl%20%7D%7D/assets/images/2017/03/0w-ToYLwaLdfVYOJh.PNG" alt="A digital dashboard in Microsoft’s Power BI software" width="800" height="405" data-image-id="0w-ToYLwaLdfVYOJh.PNG" data-width="1595" data-height="808"> A digital dashboard in Microsoft’s Power BI software[/caption]</p>
+<p>[caption id="" align="aligncenter" width="800"]<img class="graf-image" src="/assets/images/2017/03/0w-ToYLwaLdfVYOJh.PNG" alt="A digital dashboard in Microsoft’s Power BI software" width="800" height="405" data-image-id="0w-ToYLwaLdfVYOJh.PNG" data-width="1595" data-height="808"> A digital dashboard in Microsoft’s Power BI software[/caption]</p>
 <figcaption class="imageCaption"></figcaption>
 </figure>
 
