@@ -204,3 +204,4 @@ If this article has helped you in any way, or if you have any feedback on how it
 
 &nbsp;
 
+{% include disqus.html %}

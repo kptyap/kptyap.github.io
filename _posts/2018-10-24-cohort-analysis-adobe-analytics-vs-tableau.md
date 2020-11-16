@@ -11,13 +11,6 @@ categories:
 - Digital Analytics
 tags: []
 meta:
-  _edit_last: '1'
-  _yoast_wpseo_content_score: '60'
-  _yoast_wpseo_primary_category: ''
-  _thumbnail_id: '290'
-  _yoast_wpseo_focuskw_text_input: cohort analysis
-  _yoast_wpseo_focuskw: cohort analysis
-  _yoast_wpseo_linkdex: '83'
 author:
 permalink: "/cohort-analysis-adobe-analytics-vs-tableau/"
 ---
