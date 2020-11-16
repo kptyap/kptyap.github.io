@@ -35,7 +35,7 @@ Both Google Analytics and Adobe Analytics have inbuilt templates to run cohort a
 
 <!-- wp:image {"id":287,"linkDestination":"media"} -->
 
-<figure class="wp-block-image"><a href="https://www.keithyap.com.au/wp-content/uploads/2018/10/cohort1.png"><img src="%7B%7B%20site.baseurl%20%7D%7D/assets/images/2018/10/cohort1.png" alt="" class="wp-image-287"></a><br>
+<figure class="wp-block-image"><a href="https://www.keithyap.com.au/wp-content/uploads/2018/10/cohort1.png"><img src="{{ site.baseurl }}/assets/images/2018/10/cohort1.png" alt="" class="wp-image-287"></a><br>
 <figcaption>Cohort analysis in Adobe Analytics Workspace</figcaption>
 </figure>
 
@@ -75,7 +75,7 @@ So what do you do if you run up against one of these limitations? You’ll have 
 
 <!-- wp:image {"id":288,"align":"center"} -->
 
-<figure class="aligncenter"><img src="%7B%7B%20site.baseurl%20%7D%7D/assets/images/2018/10/cohort2-203x300.png" alt="" class="wp-image-288"><br>
+<figure class="aligncenter"><img src="{{ site.baseurl }}/assets/images/2018/10/cohort2-203x300.png" alt="" class="wp-image-288"><br>
 <figcaption>Step 2</figcaption>
 </figure>
 
@@ -89,7 +89,7 @@ So what do you do if you run up against one of these limitations? You’ll have 
 
 <!-- wp:image {"id":289,"align":"center"} -->
 
-<figure class="aligncenter"><img src="%7B%7B%20site.baseurl%20%7D%7D/assets/images/2018/10/cohort3.png" alt="" class="wp-image-289"></figure>
+<figure class="aligncenter"><img src="{{ site.baseurl }}/assets/images/2018/10/cohort3.png" alt="" class="wp-image-289"></figure>
 
 <!-- /wp:image -->
 
@@ -132,7 +132,7 @@ You will more than likely need to use the 'fixed' Level of Detail (LOD) in your 
 
 <!-- wp:image {"id":290,"width":940,"height":381,"linkDestination":"media"} -->
 
-<figure class="wp-block-image is-resized"><a href="https://www.keithyap.com.au/wp-content/uploads/2018/10/cohort4.png"><img src="%7B%7B%20site.baseurl%20%7D%7D/assets/images/2018/10/cohort4.png" alt="" class="wp-image-290" width="940" height="381"></a><br>
+<figure class="wp-block-image is-resized"><a href="https://www.keithyap.com.au/wp-content/uploads/2018/10/cohort4.png"><img src="{{ site.baseurl }}/assets/images/2018/10/cohort4.png" alt="" class="wp-image-290" width="940" height="381"></a><br>
 <figcaption>The completed cohort analysis in Tableau</figcaption>
 </figure>
 
