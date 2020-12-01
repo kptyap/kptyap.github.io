@@ -210,16 +210,10 @@ If this article has helped you in any way, or if you have any feedback on how it
 
 <div id="disqus_thread"></div>
 <script>
-
-/**
-*  RECOMMENDED CONFIGURATION VARIABLES: EDIT AND UNCOMMENT THE SECTION BELOW TO INSERT DYNAMIC VALUES FROM YOUR PLATFORM OR CMS.
-*  LEARN WHY DEFINING THESE VARIABLES IS IMPORTANT: https://disqus.com/admin/universalcode/#configuration-variables*/
-
 var disqus_config = function () {
       this.page.url = "{{ site.url }}{{ page.url }}";
       this.page.identifier = "{{ site.url }}{{ page.url }}";
 };
-
 (function() { // DON'T EDIT BELOW THIS LINE
 var d = document, s = d.createElement('script');
 s.src = 'https://keithyap.disqus.com/embed.js';
