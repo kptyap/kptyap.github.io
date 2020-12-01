@@ -200,7 +200,7 @@ If you'd like to explore and play around with the formulas and methods described
 
 &nbsp;
 
-If this article has helped you in any way, or if you have any feedback on how it could be improved, please leave a comment below.
+
 
 &nbsp;
 
