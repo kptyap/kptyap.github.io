@@ -196,7 +196,7 @@ By joining sentiment analysis and topic modelling, we can generate lists of topi
 
 If you'd like to explore and play around with the formulas and methods described in this article, the below excel sheet was used to create the examples in this article and should be a good starting point:
 
-[email-download download\_id=”264” contact\_form\_id=”267”]
+<a href="keithyap.com.au/assets/Text_Analysis_Excel.xlsx.zip"> Sample excel file </a>
 
 &nbsp;
 
