@@ -6,9 +6,9 @@ type: post
 permalink: "/sql-and-python-data/"
 ---
 
-## Notes on using data from Python (like a list of values) with SQL databases and tables (also in Python).
+### Notes on using data from Python (like a list of values) with SQL databases and tables (also in Python).
 
-Examples below assume ysing the MySQL Python connector.
+Examples below assume using the MySQL Python connector.
 
 Basic setup for connecting to the SQL database in using the MySQL connector:
 
