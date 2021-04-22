@@ -6,7 +6,7 @@ type: post
 permalink: "/sql-and-python-data/"
 ---
 
-# Notes on using data from Python (like a list of values) with SQL databases and tables (also in Python).
+## Notes on using data from Python (like a list of values) with SQL databases and tables (also in Python).
 
 Examples below assume ysing the MySQL Python connector.
 
@@ -26,6 +26,7 @@ Basic setup for connecting to the SQL database in using the MySQL connector:
     cur.execute("""select * from yourtable""")
     
     res = cur.fetchall() #returns list of tuples, each tuple is a row
+
 
 
 Once connected there are a few ways we may want to use the data in Python with our SQL database.
